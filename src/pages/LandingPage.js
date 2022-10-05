@@ -21,6 +21,7 @@ const LandingPage = () => {
             <img
               src="https://res.cloudinary.com/dcbco6i8s/image/upload/v1664966819/IMG_20221003_211203_621_beutqw.png"
               className="h-[100%] w-[60vw] min-w-[350px]"
+              alt="background"
             />
           </div>
         </div>
