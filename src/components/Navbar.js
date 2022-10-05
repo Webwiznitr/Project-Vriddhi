@@ -1,6 +1,6 @@
 // import React from 'react'
- import img1 from '../../src/assets/Vriddhi.png'
- import img2 from '../../src/assets/SAC PNG MERCH.png'
+import img1 from "../../src/assets/Vriddhi.png";
+import img2 from "../../src/assets/SAC PNG MERCH.png";
 
 // const Navbar = () => {
 //   return (
@@ -8,7 +8,7 @@
 //   <div class=" flex flex-wrap p-3 flex-col md:flex-row md:justify-between items-center  w-full">
 
 //     <div>
-//     <a class="flex title-font font-medium items-center mr-2 text-gray-900 mb-4 md:mb-0">      
+//     <a class="flex title-font font-medium items-center mr-2 text-gray-900 mb-4 md:mb-0">
 //       <img src={img1} className="h-12"></img>
 //     </a>
 //     </div>
@@ -20,7 +20,7 @@
 //       <a class="mr-5 hover:text-white">ABOUT US</a>
 //       <a class="mr-5 hover:text-white">OUR TEAM</a>
 //       <a class="mr-5 hover:text-white">CONTACT US</a>
-//     <button class="inline-flex items-center text-orange-500  py-1 px-8 focus:outline-none hover:bg-gray-200  mt-4 md:mt-0 text-xl rounded-3xl border-2 border-orange-500">REGISTER      
+//     <button class="inline-flex items-center text-orange-500  py-1 px-8 focus:outline-none hover:bg-gray-200  mt-4 md:mt-0 text-xl rounded-3xl border-2 border-orange-500">REGISTER
 //     </button>
 //     </nav>
 //     </div>
@@ -36,16 +36,15 @@
 
 // export default Navbar
 
-
 import { useState } from "react"; // import state
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between  text-white  mr-6">
+    <div className="flex items-center justify-around  text-white">
       <a href="/">
-        <img src={img1}  className="h-12" alt="logo" />
+        <img src={img1} className="h-12" alt="logo" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -58,7 +57,7 @@ export default function Header() {
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
@@ -77,46 +76,56 @@ export default function Header() {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/about">TOURNAMENT</a>
+              <li className=" border-gray-400 my-8 uppercase ">
+                <a href="/ " className="hover:opacity-90">
+                  TOURNAMENT
+                </a>
+              </li>
+              <li className=" border-gray-400 my-8 uppercase hover:opacity-90">
+                <a href="/">GALLERY</a>
+              </li>
+              <li className=" border-gray-400 my-8 uppercase hover:opacity-90">
+                <a href="/">ABOUT US</a>
               </li>
               <li className=" border-gray-400 my-8 uppercase">
-                <a href="/portfolio">GALLERY</a>
+                <a href="/">OUR TEAM</a>
               </li>
               <li className=" border-gray-400 my-8 uppercase">
-                <a href="/contact">ABOUT US</a>
-              </li>
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/contact">OUR TEAM</a>
-              </li>
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/contact">CONTACT</a>
+                <a href="/t">CONTACT US</a>
               </li>
             </ul>
           </div>
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <li className=" border-gray-400 my-8 uppercase">
-                <a href="/about">TOURNAMENT</a>
-              </li>
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/portfolio">GALLERY</a>
-              </li>
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/contact">ABOUT US</a>
-              </li>
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/contact">OUR TEAM</a>
-              </li>
-              <li className=" border-gray-400 my-8 uppercase">
-                <a href="/contact">CONTACT</a>
-              </li>
+          <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
+            <a href="/">TOURNAMENT</a>
+          </li>
+          <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
+            <a href="/">GALLERY</a>
+          </li>
+          <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
+            <a href="/">ABOUT US</a>
+          </li>
+          <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
+            <a href="/">OUR TEAM</a>
+          </li>
+          <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
+            <a href="/">CONTACT US</a>
+          </li>
+
+          <li className=" border-gray-400 my-8 uppercase hover:opacity-80 ">
+            <a
+              href="/"
+              className="text-[rgb(209,113,60)] border-[0.5px] rounded-2xl p-2 px-4 border-[rgb(209,113,60)]"
+            >
+              REGISTER
+            </a>
+          </li>
         </ul>
-        
       </nav>
-      <a href="/" className='hidden lg:block'>
-        <img src={img2}  className="h-24" alt="logo" />
+      <a href="/" className="hidden lg:block">
+        <img src={img2} className="h-24" alt="logo" />
       </a>
       <style>{`
       .hideMenuNav {
