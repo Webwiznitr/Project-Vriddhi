@@ -49,8 +49,8 @@ export default function Header() {
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
-            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+            className="HAMBURGER-ICON space-y-2 z-40"
+            onClick={() => setIsNavOpen(!isNavOpen)} // toggle isNavOpen state on click
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -77,21 +77,21 @@ export default function Header() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
               <li className=" border-gray-400 my-8 uppercase ">
-                <a href="/ " className="hover:opacity-90">
+                <a href="#tournament " className="hover:opacity-90">
                   TOURNAMENT
                 </a>
               </li>
               <li className=" border-gray-400 my-8 uppercase hover:opacity-90">
-                <a href="/">GALLERY</a>
+                <a href="#gallery">GALLERY</a>
               </li>
               <li className=" border-gray-400 my-8 uppercase hover:opacity-90">
-                <a href="/">ABOUT US</a>
+                <a href="#aboutus">ABOUT US</a>
               </li>
               <li className=" border-gray-400 my-8 uppercase">
-                <a href="/">OUR TEAM</a>
+                <a href="#ourteam">OUR TEAM</a>
               </li>
               <li className=" border-gray-400 my-8 uppercase">
-                <a href="/t">CONTACT US</a>
+                <a href="#contactus">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -99,19 +99,19 @@ export default function Header() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="/">TOURNAMENT</a>
+            <a href="#tournament">TOURNAMENT</a>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="/">GALLERY</a>
+            <a href="#gallery">GALLERY</a>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="/">ABOUT US</a>
+            <a href="#aboutus">ABOUT US</a>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="/">OUR TEAM</a>
+            <a href="#ourteam">OUR TEAM</a>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="/">CONTACT US</a>
+            <a href="#contactus">CONTACT US</a>
           </li>
 
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80 ">
