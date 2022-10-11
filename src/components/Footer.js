@@ -96,42 +96,27 @@ const Footer = () => {
             </h2>
             <ul className="text-base text-gray-300">
               <li>
-                <a
-                  href="https://github.com/themesberg/flowbite"
-                  className="hover:underline "
-                >
+                <a href="/" className="hover:underline ">
                   About Us
                 </a>
               </li>
               <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
+                <a href="/" className="hover:underline">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
+                <a href="/" className="hover:underline">
                   Tournament
                 </a>
               </li>
               <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
+                <a href="/" className="hover:underline">
                   Available Esports
                 </a>
               </li>
               <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
+                <a href="/" className="hover:underline">
                   Live Video
                 </a>
               </li>
