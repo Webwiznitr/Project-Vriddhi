@@ -1,7 +1,7 @@
 // import React from 'react'
 import img1 from "../../src/assets/Vriddhi.png";
 import img2 from "../../src/assets/SAC PNG MERCH.png";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // const Navbar = () => {
 //   return (
@@ -117,12 +117,12 @@ export default function Header() {
           </li>
 
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80 ">
-            <a
-              href="/"
+            <NavLink
+              to="/register"
               className="text-[rgb(209,113,60)] border-[0.5px] rounded-2xl p-2 px-4 border-[rgb(209,113,60)]"
             >
               REGISTER
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
