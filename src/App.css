@@ -36,8 +36,6 @@
     transform: rotate(360deg);
   }
 } */
-
-
 @media only screen and (max-width: 600px){
   .landing{
     flex-direction: column-reverse;

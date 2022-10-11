@@ -1,6 +1,7 @@
 // import React from 'react'
 import img1 from "../../src/assets/Vriddhi.png";
 import img2 from "../../src/assets/SAC PNG MERCH.png";
+import { NavLink, Outlet } from "react-router-dom";
 
 // const Navbar = () => {
 //   return (
@@ -42,10 +43,11 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
+  
     <div className="flex items-center justify-around  text-white">
-      <a href="/">
+      <NavLink to="/">
         <img src={img1} className="h-12" alt="logo" />
-      </a>
+      </NavLink>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -77,9 +79,9 @@ export default function Header() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
               <li className=" border-gray-400 my-8 uppercase ">
-                <a href="#tournament " className="hover:opacity-90">
+                <NavLink href="/tournament " className="hover:opacity-90">
                   TOURNAMENT
-                </a>
+                </NavLink>
               </li>
               <li className=" border-gray-400 my-8 uppercase hover:opacity-90">
                 <a href="#gallery">GALLERY</a>
@@ -99,7 +101,7 @@ export default function Header() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="#tournament">TOURNAMENT</a>
+            <NavLink to="/tournament">TOURNAMENT</NavLink>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
             <a href="#gallery">GALLERY</a>
@@ -124,9 +126,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <a href="/" className="hidden lg:block">
+      <NavLink to="/" className="hidden lg:block">
         <img src={img2} className="h-24" alt="logo" />
-      </a>
+      </NavLink>
       <style>{`
       .hideMenuNav {
         display: none;
@@ -147,5 +149,6 @@ export default function Header() {
       }
     `}</style>
     </div>
+    
   );
 }
