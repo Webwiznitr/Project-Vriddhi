@@ -37,6 +37,59 @@
   }
 } */
 
+.servicecard{
+  background-color: #2A615E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5%; */
+  /* margin-bottom: 25%; */
+  /* width: 60%; */
+  height: 100%;
+}
+/* #serimg1{
+  transform: translateY(-50px);
+}
+#serimg3{
+  transform: translateY(50px);
+} */
+.tourcard img{
+  width: 65%;
+  height: 90%;
+  transition: all 0.3s ease-in-out;
+}
+.tourcard:hover img{
+  transform: scale3d(1.1);
+  opacity: 0.2;
+}
+.tourcard span{
+  transition: all 0.3s ease-in-out;
+}
+.tourname{
+  margin: 0px 0px;
+    font-size: 0rem;
+    color: #000;
+    border-bottom: 2px solid #D77512;
+    letter-spacing: 5px;
+    position: relative;
+    top: -10px;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.tourcard:hover span{
+  font-size: 2rem;
+  opacity: 1;
+}
+.tourcard:hover span{
+  opacity: 1;
+  top: -50px;
+}
+
+.gradient{
+  background-image: radial-gradient(grey,transparent)
+}
 
 @media only screen and (max-width: 600px){
   .landing{
