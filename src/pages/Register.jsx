@@ -8,9 +8,9 @@ function Register() {
           <Navbar />
           <div className="w-full flex justify-center items-center flex-col">
             <div className="text-[60px] w-[60%] flex justify-center items-center text-center">
-              Registrations will begin on 12/10/2022 at 10:00 am IST
+              {/* Registrations started */}
             </div>
-            <div className="w-full my-16 flex justify-evenly items-center">
+            <div className="w-full my-28 flex justify-evenly items-center">
               <a
                 href="REGISTRATION GUIDELINES-FINAL.pdf"
                 download="REGISTRATION GUIDELINES-FINAL.pdf"
