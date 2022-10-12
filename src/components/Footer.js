@@ -6,14 +6,14 @@ const Footer = () => {
       <div className="md:flex md:justify-between">
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 className="mb-2 text-lg font-semibold  uppercase text-white">
+            <h2 className="mb-1 text-lg font-semibold  uppercase text-white">
               ABOUT
             </h2>
             <p className=" text-base text-gray-300">
               Vriddhi 2021 intends to feature major E-sports tournaments such as
               BGMI, Valorant, Chess, Fortnite, and much more.
             </p>
-            <p className="my-6  sm:mx-auto border-gray-700 lg:my-8" />
+            <p className="my-4  sm:mx-auto border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
               <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="/" className="text-gray-500 hover:text-white">
@@ -123,7 +123,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-2 text-lg font-semibold uppercase text-white">
+            <h2 className="mb-1 text-lg font-semibold uppercase text-white">
               SUPPORT
             </h2>
             <ul className="text-base text-gray-300">
@@ -144,11 +144,20 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="mb-1 sm:invisible sm:w-0 w-40">
+            <a href="/">
+              <img
+                src="https://res.cloudinary.com/ash123/image/upload/v1665549794/Vriddhi_Footer_Logo_dlyg4r.png"
+                className="mr-3"
+                alt="Vriddhi Logo"
+              />
+            </a>
+          </div>
         </div>
-        <div className="mb-2 md:mb-0 w-[50%] ">
+        <div className="md:mb-0 invisible w-0 md:visible lg:w-[60%] md:w-[800px]">
           <a href="/">
             <img
-              src="https://res.cloudinary.com/ash123/image/upload/v1665502875/pexels-roberto-nickson-7238759_r33gga.jpg"
+              src="https://res.cloudinary.com/ash123/image/upload/v1665549794/Vriddhi_Footer_Logo_dlyg4r.png"
               className="mr-3"
               alt="Vriddhi Logo"
             />
