@@ -10,7 +10,7 @@ const Footer = () => {
               ABOUT
             </h2>
             <p className=" text-base text-gray-300">
-              Vriddhi 2021 intends to feature major E-sports tournaments such as
+              Vriddhi 2021 intends to feature major Sports tournaments such as
               BGMI, Valorant, Chess, Fortnite, and much more.
             </p>
             <p className="my-4  sm:mx-auto border-gray-700 lg:my-8" />
