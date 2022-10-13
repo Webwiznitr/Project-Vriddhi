@@ -111,7 +111,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/" className="hover:underline">
-                  Available Esports
+                  Available Sports
                 </a>
               </li>
               <li>
