@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="p-8 sm:p-6 bg-gray-900">
+    <footer className="p-8 sm:p-6 bg-[#111a21]">
       <div className="md:flex md:justify-between">
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
@@ -10,7 +10,8 @@ const Footer = () => {
               ABOUT
             </h2>
             <p className=" text-base text-gray-300">
-              Vriddhi 2022 intends to feature major Sports tournaments such as Football, Cricket, Badminton, and much more.
+              Vriddhi 2022 intends to feature major Sports tournaments such as
+              Football, Cricket, Badminton, and much more.
             </p>
             <p className="my-4  sm:mx-auto border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
