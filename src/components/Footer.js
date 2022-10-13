@@ -10,7 +10,7 @@ const Footer = () => {
               ABOUT
             </h2>
             <p className=" text-base text-gray-300">
-              Vriddhi 2021 intends to feature major Sports tournaments such as Football, Cricket, Badminton, and much more.
+              Vriddhi 2022 intends to feature major Sports tournaments such as Football, Cricket, Badminton, and much more.
             </p>
             <p className="my-4  sm:mx-auto border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
