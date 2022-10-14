@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Tournament from "./pages/Tournament";
 import Register from "./pages/Register";
 import Gallery from "./pages/Gallery";
+import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/tournament" element={<Tournament />} />
         <Route path="/register" element={<Register />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </>
   );
