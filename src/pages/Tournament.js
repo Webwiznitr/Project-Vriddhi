@@ -72,11 +72,19 @@ function Tournament() {
                             </div> */}
                       {/* </div> */}
 
-                      <div className="flex justify-center text-center w-full absolute bottom-0 ">
+                      <div className="flex justify-evenly items-center h-[20%] text-center w-full absolute bottom-0 ">
+                        <a
+                            href="REGISTRATION GUIDELINES-FINAL.pdf"
+                            download="REGISTRATION GUIDELINES-FINAL.pdf"
+                        >
+                            <button className="text-[rgb(209,113,60)] border-[0.5px] rounded-2xl p-2 px-4 border-[rgb(209,113,60)]">
+                            Read guidelines
+                            </button>
+                        </a>
                         <a href="https://docs.google.com/forms/d/1mflQg2fDYrMzgBlJY68I_3AJ9poyNGxSipkZ7O173dY/viewform?ts=6345b7f3&edit_requested=true">
-                          <button className="text-[rgb(111,243,63)] border-[0.5px] rounded-2xl p-2 px-4 border-[rgb(111,243,63)]">
-                            Register
-                          </button>
+                            <button className="text-[rgb(111,243,63)] border-[0.5px] rounded-2xl p-2 px-4 border-[rgb(111,243,63)]">
+                                Register
+                            </button>
                         </a>
                       </div>
                     </div>

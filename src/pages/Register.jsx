@@ -3,14 +3,15 @@ import Navbar from "../components/Navbar";
 function Register() {
   return (
     <>
-      <div className="bg-[#111a21] h-full min-h-screen text-white flex flex-col content-evenly">
+      <div className="bg-[#111a21] h-fit text-white flex flex-col content-evenly">
         <div className="flex flex-col w-full h-screen">
           <Navbar />
           <div className="w-full flex justify-center items-center flex-col">
             <div className="text-[60px] w-[60%] flex justify-center items-center text-center">
               {/* Registrations started */}
+              <img className="w-[60%] " alt="sport" src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1665768851/kindpng_5952-01_cdkxbx.png" />
             </div>
-            <div className="w-full my-28 flex justify-evenly items-center">
+            <div className="w-full flex justify-evenly items-center">
               <a
                 href="REGISTRATION GUIDELINES-FINAL.pdf"
                 download="REGISTRATION GUIDELINES-FINAL.pdf"

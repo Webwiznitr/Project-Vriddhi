@@ -7,7 +7,6 @@ const LandingPage = () => {
     <>
       <div className="bg-[#111a21] min-h-screen h-[100%] text-white flex flex-col content-evenly">
         <Navbar />
-
         <div className="flex justify-around landing">
           <div className="w-1/2 text flex flex-col p-1 lg:pl-2 lg:w-3/5 mt-20 mb-40 md:ml-3">
             <div className="text-2xl lg:text-4x sports">Sports Fest</div>
