@@ -28,7 +28,7 @@ const Tourdata = [
   {
     name: "Kho-Kho",
     img: "https://res.cloudinary.com/dcbco6i8s/image/upload/v1665694530/kho_ctndsi.png",
-    info: "",
+    info: "Originating from the land of India comes one of the oldest outdoor sports, kho-kho. It is a tag team game; each team consists of 12 players and is played on a rectangular court. It is a fast-paced game involving quick thinking and decision-making.",
   },
   {
     name: "Table Tennis",
@@ -43,7 +43,7 @@ const Tourdata = [
   {
     name: "Chess",
     img: "https://res.cloudinary.com/dcbco6i8s/image/upload/v1665694699/chess_1_qkn4yb.png",
-    info: "",
+    info: "The game of kings and gentlemen, played since the 7th century, involves checkmate to the opponent's king. It is played between 2 players, with games lasting anywhere between 10 mins to 6 hours. It is a mind-intensive sport and involves a lot of critical thinking.",
   },
 ];
 

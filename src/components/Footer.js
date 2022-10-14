@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,13 +10,14 @@ const Footer = () => {
             <h2 className="mb-1 text-lg font-semibold  uppercase text-white">
               ABOUT
             </h2>
+            
             <p className=" text-base text-gray-300">
               Vriddhi 2022 intends to feature major Sports tournaments such as
               Football, Cricket, Badminton, and much more.
             </p>
-            <div className="text-gray-300 my-1">
+            {/* <div className="text-gray-300 my-1">
               <a href="mailto:nitr.vriddhi@gmail.com">nitr.vriddhi@gmail.com</a>
-            </div>
+            </div> */}
 
             <p className="text-gray-300 my-1">
               Subham Gourav Biswal: 9337067360
@@ -23,6 +25,13 @@ const Footer = () => {
             <p className="mt-1 lg:mt-3" />
             <div className="sm:flex sm:items-center sm:justify-between">
               <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                
+                <a
+                  href="mailto:nitr.vriddhi@gmail.com"
+                  className="text-gray-500 hover:text-white"
+                >
+                  <img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1665767111/toppng.com-ext-email-icon-gray-circle-680x680_xfjgpt.png" className="w-[20px] " alt="email logo"/>
+                </a>
                 <a
                   href="https://m.facebook.com/100054258680169/"
                   className="text-gray-500 hover:text-white"
@@ -77,31 +86,26 @@ const Footer = () => {
             <h2 className="mb-2 text-lg font-semibold  uppercase text-white">
               QUICK LINKS
             </h2>
-            <ul className="text-base text-gray-300">
+            <ul className=" h-[60%] w-fit flex flex-col justify-evenly items-start text-base text-gray-300">
               <li>
-                <a href="/" className="hover:underline ">
+                <NavLink to="/" className="hover:underline ">
                   About Us
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/" className="hover:underline">
+                <NavLink to="/" className="hover:underline">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/" className="hover:underline">
+                <NavLink to="/tournament" className="hover:underline">
                   Tournament
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/" className="hover:underline">
-                  Available Sports
-                </a>
-              </li>
-              <li>
-                <a href="/" className="hover:underline">
-                  Live Video
-                </a>
+                <NavLink to="/register" className="hover:underline">
+                  Register
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -109,7 +113,7 @@ const Footer = () => {
             <h2 className="mb-1 text-lg font-semibold uppercase text-white">
               SUPPORT
             </h2>
-            <ul className="text-base text-gray-300">
+            <ul className=" h-[40%] w-fit flex flex-col justify-evenly items-start text-base text-gray-300">
               <li>
                 <a href="/" className="hover:underline">
                   Privacy Policy
