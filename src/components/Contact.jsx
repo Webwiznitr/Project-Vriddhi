@@ -8,7 +8,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Navbar from "./Navbar"
-import Footer from "./Footer";
+//import Footer from "./Footer";
 const Contact = () => {
   return (
     <>
