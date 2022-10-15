@@ -79,12 +79,12 @@ export default function Header() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] ">
               <li className=" border-gray-400 my-8 uppercase ">
-                <NavLink to="/tournament " className="hover:opacity-90">
+                <NavLink to="/tournament" className="hover:opacity-90">
                   TOURNAMENT
                 </NavLink>
               </li>
               <li className=" border-gray-400 my-8 uppercase hover:opacity-90">
-                <NavLink to="/gallery " className="hover:opacity-90">
+                <NavLink to="/gallery" className="hover:opacity-90">
                   GALLERY
                 </NavLink>              
               </li>
@@ -106,7 +106,7 @@ export default function Header() {
             <NavLink to="/tournament">TOURNAMENT</NavLink>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <NavLink to="/gallery " className="hover:opacity-90">
+            <NavLink to="/gallery" className="hover:opacity-90">
                   GALLERY
                 </NavLink>          </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
