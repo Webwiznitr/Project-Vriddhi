@@ -95,7 +95,7 @@ export default function Header() {
                 <a href="#ourteam">OUR TEAM</a>
               </li>
               <li className=" border-gray-400 my-8 uppercase">
-                <a href="#contactus">CONTACT US</a>
+                <NavLink to="/contact">CONTACT US</NavLink>
               </li>
             </ul>
           </div>
@@ -116,7 +116,7 @@ export default function Header() {
             <a href="#ourteam">OUR TEAM</a>
           </li>
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80">
-            <a href="#contactus">CONTACT US</a>
+            <NavLink to="/contact">CONTACT US</NavLink>
           </li>
 
           <li className=" border-gray-400 my-8 uppercase hover:opacity-80 ">
