@@ -8,7 +8,7 @@ const TeamCard = ({name,img,team}) => {
     <div className=' text-white p-4 flex flex-col items-center'>
          <div className='flex justify-center mt-[8px] text-[24px] lg:text-[26px] text-yellow-400 mb-4 capitalize'>{team}</div>
          <div className='w-[240px] h-[240px] color'><img alt="team" src={img}/></div>
-         <div className='flex justify-center mt-[12px] text-[24px] lg:text-[24px] text-orange-400 capitalize'>{name}</div>
+         <div className='flex justify-center mt-[12px] text-[24px] lg:text-[24px] small:text-[10px] text-orange-400 capitalize'>{name}</div>
 
     </div>
   )

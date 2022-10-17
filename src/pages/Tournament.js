@@ -14,16 +14,16 @@ function Tournament() {
   return (
     <>
       <div className="bg-[#111a21] min-h-screen h-[100%] text-white flex flex-col content-evenly">
-        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col justigy-center items-center w-full h-fit">
           <Navbar />
           <div className="w-full h-[10%] flex justify-center items-center">
-            <div className=" font-serif   w-1/2 h-[90%]  text-[50px] tracking-widest text-center mt-0 flex justify-center items-center">
+            <div className=" font-serif   w-1/2 h-[90%]  lg:text-[3.5rem] text-[2.5rem] small:text-[2rem] tracking-widest text-center mt-0 flex justify-center items-center">
               {" "}
               TOURNAMENT{" "}
             </div>
           </div>
-          <div className="w-full h-[90%] flex flex-row">
-            <div className="w-[60%] h-full flex justify-center items-center">
+          <div className="w-full lg:h-[90%]  flex flex-row large:h-fit large:flex-col large:pt-[50px] justify-center items-center">
+            <div className="w-[60%] large:w-[100%] h-full flex justify-center items-center">
               <div className="w-[80%] h-[97%] border border-white grid grid-cols-3 gap-[5px] p-1">
                 {Tourdata.map((tour) => {
                   return (
@@ -41,7 +41,7 @@ function Tournament() {
               <div className="w-[90%] h-[90%] border border-white flex justify-center items-center">
                 {selected ? (
                   <>
-                    <div className="w-[98%] h-[98%] border-[8px] border-white relative">
+                    <div className="w-[98%] h-[98%] border-[8px] border-white relative flex flex-col">
                       {/* <div className='flex'> */}
                       <div className="flex justify-center items-center">
                         <img
@@ -72,7 +72,7 @@ function Tournament() {
                             </div> */}
                       {/* </div> */}
 
-                      <div className="flex justify-evenly items-center h-[20%] text-center w-full absolute bottom-0 ">
+                      <div className="flex justify-evenly items-center h-[20%] text-center w-full">
                         <a
                             href="REGISTRATION GUIDELINES-FINAL.pdf"
                             download="REGISTRATION GUIDELINES-FINAL.pdf"
@@ -99,10 +99,10 @@ function Tournament() {
               </div>
             </div>
           </div>
+      <Footer />
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }

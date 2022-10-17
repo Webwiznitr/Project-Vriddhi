@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer'
 function Register() {
   return (
     <>
       <div className="bg-[#111a21] h-fit text-white flex flex-col content-evenly">
-        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col w-full h-fit min-h-screen">
           <Navbar />
           <div className="w-full flex justify-center items-center flex-col">
             <div className="text-[60px] w-[60%] flex justify-center items-center text-center">
@@ -27,6 +28,7 @@ function Register() {
               </a>
             </div>
           </div>
+          <Footer/>
         </div>
       </div>
     </>

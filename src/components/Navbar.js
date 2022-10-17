@@ -97,6 +97,9 @@ export default function Header() {
               <li className=" border-gray-400 my-8 uppercase">
                 <NavLink to="/contact">CONTACT US</NavLink>
               </li>
+              <li className=" border-gray-400 my-8 uppercase">
+                <NavLink to="/register">REGISTER</NavLink>
+              </li>
             </ul>
           </div>
         </section>
@@ -125,6 +128,7 @@ export default function Header() {
               className="text-[rgb(209,113,60)] border-[0.5px] rounded-2xl p-2 px-4 border-[rgb(209,113,60)]"
             >
               REGISTER
+
             </NavLink>
           </li>
         </ul>
