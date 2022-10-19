@@ -1,6 +1,4 @@
 // import React from 'react'
-import img1 from "../../src/assets/Vriddhi.png";
-import img2 from "../../src/assets/SAC PNG MERCH.png";
 import { NavLink } from "react-router-dom";
 
 // const Navbar = () => {
@@ -46,7 +44,7 @@ export default function Header() {
   
     <div className="flex items-center justify-around  text-white">
       <NavLink to="/">
-        <img src={img1} className="h-12" alt="logo" />
+        <img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1666185863/Vriddhi_aybee7.png" className="h-12" alt="logo" />
       </NavLink>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -134,7 +132,7 @@ export default function Header() {
         </ul>
       </nav>
       <NavLink to="/" className="hidden lg:block">
-        <img src={img2} className="h-24" alt="logo" />
+        <img src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1666185862/SAC_PNG_MERCH_jcr5ha.png" className="h-24" alt="logo" />
       </NavLink>
       <style>{`
       .hideMenuNav {

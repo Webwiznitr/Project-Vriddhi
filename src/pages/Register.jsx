@@ -1,9 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer'
 function Register() {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
   return (
     <>
+    {loading?(
+      <>
+      <div className="w-screen h-screen flex justify-center items-center bg-[#172027]">
+          <img alt="loader" className="h-fit w-fit" src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1666186569/0_U2RiSXJx8U9K4thZ_vsmfww.gif" />
+        </div>
+      </>
+    ):(<>
       <div className="bg-[#111a21] h-fit text-white flex flex-col content-evenly">
         <div className="flex flex-col w-full h-fit min-h-screen">
           <Navbar />
@@ -30,7 +41,7 @@ function Register() {
           </div>
           <Footer/>
         </div>
-      </div>
+      </div></>)}
     </>
   );
 }

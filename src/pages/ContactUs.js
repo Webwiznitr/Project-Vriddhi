@@ -1,11 +1,24 @@
-import React from "react";
+import React,{useState} from "react";
 import Contact from "../components/Contact";
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
   return (
+    <>
+    {loading?(
+      <>
+      <div className="w-screen h-screen flex justify-center items-center bg-[#172027]">
+          <img alt="loader" className="h-fit w-fit" src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1666186569/0_U2RiSXJx8U9K4thZ_vsmfww.gif" />
+        </div>
+      </>
+    ):(<>
     <div>
       <Contact />
-    </div>
+    </div></>)}
+    </>
   );
 };
 

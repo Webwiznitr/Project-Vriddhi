@@ -4,8 +4,12 @@ import Tourcard from "../components/Tourcard";
 import Tourdata from "../components/Tourdata";
 import Footer from "../components/Footer";
 function Tournament() {
+  const [loading, setLoading] = useState(true);
   const [selected, setselected] = useState(false);
   const [data, setdata] = useState({});
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
   const Selected = (props) => {
     setselected(true);
     setdata(props);
@@ -13,8 +17,16 @@ function Tournament() {
   };
   return (
     <>
+    {loading?(
+      <>
+        <div className="w-screen h-screen flex justify-center items-center bg-[#172027]">
+          <img alt="loader" className="h-fit w-fit" src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1666186569/0_U2RiSXJx8U9K4thZ_vsmfww.gif" />
+        </div>
+      </>
+    ):(
+      <>
       <div className="bg-[#111a21] min-h-screen h-[100%] text-white flex flex-col content-evenly">
-        <div className="flex flex-col justigy-center items-center w-full h-fit">
+        <div className="flex flex-col w-full h-fit">
           <Navbar />
           <div className="w-full h-[10%] flex justify-center items-center">
             <div className=" font-serif   w-1/2 h-[90%]  lg:text-[3.5rem] text-[2.5rem] small:text-[2rem] tracking-widest text-center mt-0 flex justify-center items-center">
@@ -102,6 +114,8 @@ function Tournament() {
       <Footer />
         </div>
       </div>
+      </>
+    )}
 
     </>
   );
